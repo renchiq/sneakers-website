@@ -5,9 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div class="app">app</div>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo logo">
+              <a class="logo__img">
+                <img
+                  src="./public/assets/logo.png"
+                  alt="Магазин лучших кроссовок"
+                  class="logo__img-image"
+                />
+              </a>
+              <div class="logo__titles">
+                <h2 class="logo__title">React Sneakers</h2>
+                <h3 class="logo__subtitle">Магазин лучших кроссовок</h3>
+              </div>
+            </div>
+            <div class="header__actions">
+              <div class="header__shopping-cart shopping-cart">
+                <div class="shopping-cart__icon">
+                  <img
+                    src="./public/assets/icons/shopping-cart.svg"
+                    alt="Корзина"
+                  />
+                </div>
+                <div class="shopping-cart__sum">0 руб.</div>
+              </div>
+              <div class="header__wishlist">
+                <img src="./public/assets/icons/wish.svg" alt="Желаемое" />
+              </div>
+              <div class="header__profile">
+                <img
+                  src="./public/assets/icons/header-profile.svg"
+                  alt="Профиль"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="ad">
+        <div class="container">
+          <div class="ad__body">
+            <div class="ad__block ad-block-stan-smith">
+              <div class="ad-block-stan-smith__info stan-smith-info">
+                <div class="stan-smith-info__sponsors">
+                  <img
+                    src="./public/assets/sponsor-stan-smith.png"
+                    alt="Спонсоры"
+                  />
+                </div>
+                <h2 class="stan-smith-info__title">
+                  <span class="stan-smith-info__title-name">Stan Smith</span>,
+                  <br />
+                  Forever!
+                </h2>
+                <a href="#" class="stan-smith-info__link">Купить</a>
+              </div>
+              <div class="ad-block-stan-smith__img">
+                <img src="./public/assets/adversiting-stan-smith.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
