@@ -203,3 +203,251 @@ ul {
   font-size: 16px;
   margin-left: -40px;
 }
+
+/* Основная страница */
+
+.main-products__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-products__title {
+  flex-basis: 50%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 32px;
+  color: #000000;
+}
+
+.main-products__search {
+  flex-basis: 50%;
+}
+
+.main-products__search-input-container {
+  display: flex;
+  max-width: max-content;
+  border: 2px solid #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 13px 5px 13px 18px;
+  margin-left: auto;
+}
+
+.main-products__search-input-button {
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 14px;
+}
+
+.main-products__search-input {
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.main-products__search-input::placeholder {
+  color: #c4c4c4;
+}
+
+.main-products__products-container {
+  flex-basis: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-products__product-card {
+  margin: 0px 28px;
+}
+
+.main-products__product-card:first-child {
+  margin-left: 0;
+}
+
+.main-products__product-card:nth-child(4n + 1) {
+  margin-left: 0;
+}
+
+.main-products__product-card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.main-products__product-card {
+  margin-bottom: 50px;
+}
+
+.product-card {
+  position: relative;
+  padding: 20px 30px 32px 30px;
+  max-width: 212px;
+  background: #ffffff;
+  border: 2px solid #f3f3f3;
+  border-radius: 40px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover {
+  position: relative;
+  transform: translateY(-10px);
+  padding: 20px 30px 32px 30px;
+  max-width: 212px;
+  background: #ffffff;
+  border-radius: 40px;
+  border: 2px solid #f8f8f8;
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+}
+
+.product-card__wish-btn {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border: 2px solid #f8f8f8;
+  border-radius: 7px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card__wish-btn.active {
+  background-color: #fef0f0;
+  border: none;
+  outline: none;
+}
+
+.product-card__wish-btn.active::before {
+  content: url("./public/assets/icons/wisth-active-card.svg");
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-card__wish-btn::before {
+  content: url("./public/assets/icons/wish-disable-card.png");
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.product-card__wish-btn:hover {
+  background-color: #fef0f0;
+  border: none;
+  outline: none;
+}
+
+.product-card__wish-btn:hover::before {
+  content: url("./public/assets/icons/wisth-active-card.svg");
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-card__img {
+  width: 133px;
+  height: 112px;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.product-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-card__name {
+  font-weight: 400;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.product-card__price {
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  line-height: 13px;
+}
+
+.product-card__price--sum {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+
+.product-card__add-btn {
+  position: absolute;
+  right: 30px;
+  bottom: 32px;
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border: 2px solid #f8f8f8;
+  border-radius: 7px;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-card__add-btn.active {
+  background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+  border: none;
+}
+
+.product-card__add-btn.active::before {
+  content: url("./public/assets/icons/confirmed-card.svg");
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-card__add-btn::before {
+  content: url("./public/assets/icons/add-card.svg");
+  width: 11px;
+  height: 11pxpx;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-card__add-btn:hover {
+  background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+  border: none;
+}
+
+.product-card__add-btn:hover::before {
+  content: url("./public/assets/icons/confirmed-card.svg");
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
