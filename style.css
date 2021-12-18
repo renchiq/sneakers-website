@@ -105,6 +105,11 @@ ul {
   margin-left: 30px;
 }
 
+.header__catalog {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .shopping-cart {
   display: flex;
   align-items: center;
@@ -363,6 +368,7 @@ ul {
 }
 
 .product-card__img {
+  display: flex;
   width: 133px;
   height: 112px;
   margin-bottom: 14px;
