@@ -57,13 +57,14 @@
                 <h1 class="sign-in__title">Вход</h1>
 
                 <div class="sign-in__input-block input-block">
-                  <label for="sign-in__email" class="input-block__label"
-                    >Email</label
+                  <label for="sign-in__login" class="input-block__label"
+                    >Логин</label
                   >
                   <input
                     type="email"
                     class="input-block__input input"
-                    id="sign-in__email"
+                    id="sign-in__login"
+                    data-validation="require"
                   />
                 </div>
                 <div class="sign-in__input-block input-block">
@@ -74,6 +75,7 @@
                     type="password"
                     class="input-block__input input"
                     id="sign-in__password"
+                    data-validation="require"
                   />
                 </div>
 
@@ -86,5 +88,6 @@
         </section>
       </div>
     </div>
+    <script src="./scripts/sign-in-validation.js"></script>
   </body>
 </html>

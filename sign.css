@@ -63,6 +63,15 @@
   box-shadow: 0px 0px 0px 4px rgba(78, 115, 248, 0.2);
 }
 
+.input.bad-validation {
+  border: 1px solid red;
+}
+
+.input.bad-validation:focus {
+  border: 1px solid red;
+  box-shadow: 0px 0px 0px 4px rgba(255, 30, 0, 0.2);
+}
+
 .sign-up__send-button {
   background: linear-gradient(180deg, #6989fe 0%, #3c64f4 100%);
   border-radius: 8px;
