@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sign.css" />
+    <title>Вход</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <header class="header">
+          <div class="container">
+            <div class="header__body">
+              <div class="header__logo logo">
+                <a class="logo__img">
+                  <img
+                    src="./public/assets/logo.png"
+                    alt="Магазин лучших кроссовок"
+                    class="logo__img-image"
+                  />
+                </a>
+                <div class="logo__titles">
+                  <h2 class="logo__title">React Sneakers</h2>
+                  <h3 class="logo__subtitle">Магазин лучших кроссовок</h3>
+                </div>
+              </div>
+              <div class="header__actions">
+                <div class="header__shopping-cart shopping-cart">
+                  <div class="shopping-cart__icon">
+                    <img
+                      src="./public/assets/icons/shopping-cart.svg"
+                      alt="Корзина"
+                    />
+                  </div>
+                  <div class="shopping-cart__sum">0 руб.</div>
+                </div>
+                <div class="header__wishlist">
+                  <img src="./public/assets/icons/wish.svg" alt="Желаемое" />
+                </div>
+                <div class="header__profile">
+                  <img
+                    src="./public/assets/icons/header-profile.svg"
+                    alt="Профиль"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="sign-in">
+          <div class="container">
+            <div class="sign-in__body">
+              <form class="sign-in__container">
+                <h1 class="sign-in__title">Вход</h1>
+
+                <div class="sign-in__input-block input-block">
+                  <label for="sign-in__email" class="input-block__label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="input-block__input input"
+                    id="sign-in__email"
+                  />
+                </div>
+                <div class="sign-in__input-block input-block">
+                  <label for="sign-in__password" class="input-block__label"
+                    >Пароль</label
+                  >
+                  <input
+                    type="password"
+                    class="input-block__input input"
+                    id="sign-in__password"
+                  />
+                </div>
+
+                <button class="sign-in__send-button" type="submit">
+                  Войти
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
