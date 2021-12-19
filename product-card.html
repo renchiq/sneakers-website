@@ -124,6 +124,7 @@
                     name="color"
                     type="radio"
                     id="color-blue"
+                    checked
                   />
                   <label
                     for="color-blue"
@@ -223,7 +224,7 @@
               </div>
             </div>
             <div class="product__best-product best-product">
-              <h2 class="best-product__title">Лучшие товары</h2>
+              <h2 class="best-product__title">Хит-продаж</h2>
 
               <div class="best-prosuct__product-card product-card">
                 <button class="product-card__wish-btn active"></button>
@@ -245,14 +246,150 @@
             </div>
             <div class="product__all-char all-char">
               <ul class="all-char__menu">
-                <li class="all-char__item">Описание</li>
-                <li class="all-char__item">Характеристики</li>
+                <li class="all-char__item active" data-hidden="description">
+                  Описание
+                </li>
+                <li class="all-char__item" data-hidden="characters">
+                  Характеристики
+                </li>
               </ul>
+              <div
+                class="
+                  all-char__description
+                  char-description
+                  all-char__hidden
+                  active
+                "
+                data-hidden-id="description"
+              >
+                <p class="char-description__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat, neque!
+                </p>
+                <p class="char-description__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  aspernatur odio quos id nam velit ipsa dolor hic natus nobis
+                  fuga quod doloribus, doloremque in reprehenderit
+                  necessitatibus, quo error assumenda.
+                </p>
+                <p class="char-description__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  hic, enim error nobis ut blanditiis iste dolores maxime
+                  necessitatibus ab?
+                </p>
+              </div>
+              <div
+                class="all-char__char all-char__hidden"
+                data-hidden-id="characters"
+              >
+                <ul class="all-char__char-container">
+                  <li class="all-char__char-row">
+                    <div class="all-char__char-name">Бренд:</div>
+                    <div class="all-char__char-value">Nike</div>
+                  </li>
+                  <li class="all-char__char-row">
+                    <div class="all-char__char-name">Модель:</div>
+                    <div class="all-char__char-value">Blazer</div>
+                  </li>
+                  <li class="all-char__char-row">
+                    <div class="all-char__char-name">Категория:</div>
+                    <div class="all-char__char-value">Кроссовки</div>
+                  </li>
+                  <li class="all-char__char-row">
+                    <div class="all-char__char-name">Сезон:</div>
+                    <div class="all-char__char-value">осень/весна</div>
+                  </li>
+                  <li class="all-char__char-row">
+                    <div class="all-char__char-name">Материал:</div>
+                    <div class="all-char__char-value">Нубук</div>
+                  </li>
+                  <li class="all-char__char-row">
+                    <div class="all-char__char-name">Страна:</div>
+                    <div class="all-char__char-value">Китай</div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="product__related-product"></div>
+            <div class="product__related-product related-product">
+              <h2 class="related-product__title">Вам понравятся</h2>
+              <div class="related-product__card-container">
+                <div class="related-product__product-card product-card">
+                  <a class="product-card__wish-btn"></a>
+                  <div class="product-card__img">
+                    <img
+                      src="./public/assets/product-mages/product1.jpg"
+                      alt="Nike Blazer"
+                    />
+                  </div>
+                  <p class="product-card__name">
+                    Мужские Кроссовки Nike Blazer Mid Suede
+                  </p>
+                  <p class="product-card__price">
+                    ЦЕНА: <br />
+                    <span class="product-card__price--sum">12 999 руб.</span>
+                  </p>
+                  <a class="product-card__add-btn"></a>
+                </div>
+
+                <div class="related-product__product-card product-card">
+                  <a class="product-card__wish-btn"></a>
+                  <div class="product-card__img">
+                    <img
+                      src="./public/assets/product-mages/product1.jpg"
+                      alt="Nike Blazer"
+                    />
+                  </div>
+                  <p class="product-card__name">
+                    Мужские Кроссовки Nike Blazer Mid Suede
+                  </p>
+                  <p class="product-card__price">
+                    ЦЕНА: <br />
+                    <span class="product-card__price--sum">12 999 руб.</span>
+                  </p>
+                  <a class="product-card__add-btn"></a>
+                </div>
+
+                <div class="related-product__product-card product-card">
+                  <a class="product-card__wish-btn"></a>
+                  <div class="product-card__img">
+                    <img
+                      src="./public/assets/product-mages/product1.jpg"
+                      alt="Nike Blazer"
+                    />
+                  </div>
+                  <p class="product-card__name">
+                    Мужские Кроссовки Nike Blazer Mid Suede
+                  </p>
+                  <p class="product-card__price">
+                    ЦЕНА: <br />
+                    <span class="product-card__price--sum">12 999 руб.</span>
+                  </p>
+                  <a class="product-card__add-btn"></a>
+                </div>
+
+                <div class="related-product__product-card product-card">
+                  <a class="product-card__wish-btn"></a>
+                  <div class="product-card__img">
+                    <img
+                      src="./public/assets/product-mages/product1.jpg"
+                      alt="Nike Blazer"
+                    />
+                  </div>
+                  <p class="product-card__name">
+                    Мужские Кроссовки Nike Blazer Mid Suede
+                  </p>
+                  <p class="product-card__price">
+                    ЦЕНА: <br />
+                    <span class="product-card__price--sum">12 999 руб.</span>
+                  </p>
+                  <a class="product-card__add-btn"></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
+    <script src="./product-card.js"></script>
   </body>
 </html>
