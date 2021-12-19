@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product-card.css" />
+    <title>Карточка товара</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo logo">
+              <a class="logo__img">
+                <img
+                  src="./public/assets/logo.png"
+                  alt="Магазин лучших кроссовок"
+                  class="logo__img-image"
+                />
+              </a>
+              <div class="logo__titles">
+                <h2 class="logo__title">React Sneakers</h2>
+                <h3 class="logo__subtitle">Магазин лучших кроссовок</h3>
+              </div>
+            </div>
+            <div class="header__actions">
+              <div class="header__shopping-cart shopping-cart">
+                <div class="shopping-cart__icon">
+                  <img
+                    src="./public/assets/icons/shopping-cart.svg"
+                    alt="Корзина"
+                  />
+                </div>
+                <div class="shopping-cart__sum">0 руб.</div>
+              </div>
+              <div class="header__wishlist">
+                <img src="./public/assets/icons/wish.svg" alt="Желаемое" />
+              </div>
+              <div class="header__profile">
+                <img
+                  src="./public/assets/icons/header-profile.svg"
+                  alt="Профиль"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="product">
+        <div class="container">
+          <div class="product__body">
+            <div class="product__page product-page">
+              <div class="product-page__image">
+                <div class="product-page__image-block">
+                  <img
+                    src="./public/assets/product-mages/product1.jpg"
+                    class="product-page__image-img"
+                  />
+                </div>
+
+                <div class="product-page__image-char">
+                  <div class="product-page__image-row-container">
+                    <div class="product-page__image-row">
+                      <div class="product-page__image-row-name">Старана:</div>
+                      <div class="product-page__image-row-value">Китай</div>
+                    </div>
+                    <div class="product-page__image-row">
+                      <div class="product-page__image-row-name">Материал:</div>
+                      <div class="product-page__image-row-value">Нубук</div>
+                    </div>
+                    <div class="product-page__image-row">
+                      <div class="product-page__image-row-name">Сезон:</div>
+                      <div class="product-page__image-row-value">
+                        осень/весна
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-page__char product-char">
+                <h1 class="product-char__title">Nike Airmax 270 React</h1>
+                <div class="product-char__rating">
+                  <div class="product-char__rating-start">
+                    <img src="./public/assets/icons/enable-star.svg" alt="" />
+                  </div>
+                  <div class="product-char__rating-start">
+                    <img src="./public/assets/icons/enable-star.svg" alt="" />
+                  </div>
+                  <div class="product-char__rating-start">
+                    <img src="./public/assets/icons/enable-star.svg" alt="" />
+                  </div>
+                  <div class="product-char__rating-start">
+                    <img src="./public/assets/icons/enable-star.svg" alt="" />
+                  </div>
+                  <div class="product-char__rating-start">
+                    <img src="./public/assets/icons/disable-start.svg" alt="" />
+                  </div>
+                </div>
+                <div class="product-char__line"></div>
+                <div class="product-char__price">10000 руб.</div>
+                <div class="product-char__row-container">
+                  <div class="product-char__row">
+                    <div class="product-char__row-name">Бренд:</div>
+                    <div class="product-char__row-value">Nike</div>
+                  </div>
+                  <div class="product-char__row">
+                    <div class="product-char__row-name">Категория:</div>
+                    <div class="product-char__row-value">Кроссовки</div>
+                  </div>
+                  <div class="product-char__row">
+                    <div class="product-char__row-name">Доставка:</div>
+                    <div class="product-char__row-value">Бесплатно</div>
+                  </div>
+                </div>
+                <div class="product-char__line"></div>
+
+                <div class="product-char__color">
+                  <span class="product-char__color-title">Цвет:</span>
+                  <input
+                    class="product-char__color-radion"
+                    name="color"
+                    type="radio"
+                    id="color-blue"
+                  />
+                  <label
+                    for="color-blue"
+                    class="
+                      product-char__color-label-blue product-char__color-label
+                    "
+                  >
+                    <div class="product-char__color-label-fill"></div>
+                  </label>
+                  <input
+                    class="product-char__color-radion"
+                    name="color"
+                    type="radio"
+                    id="color-red"
+                  />
+                  <label
+                    for="color-red"
+                    class="
+                      product-char__color-label-red product-char__color-label
+                    "
+                  >
+                    <div class="product-char__color-label-fill"></div>
+                  </label>
+                  <input
+                    class="product-char__color-radion"
+                    name="color"
+                    type="radio"
+                    id="color-black"
+                  />
+                  <label
+                    for="color-black"
+                    class="
+                      product-char__color-label-black product-char__color-label
+                    "
+                  >
+                    <div class="product-char__color-label-fill"></div>
+                  </label>
+                  <input
+                    class="product-char__color-radion"
+                    name="color"
+                    type="radio"
+                    id="color-yellow"
+                  />
+                  <label
+                    for="color-yellow"
+                    class="
+                      product-char__color-label-yellow product-char__color-label
+                    "
+                  >
+                    <div class="product-char__color-label-fill"></div>
+                  </label>
+                </div>
+                <div class="product-char__size">
+                  <label for="" class="product-char__size-label">Размер:</label>
+                  <select class="product-char__size-input">
+                    <option value="42">42</option>
+                    <option value="42">43</option>
+                    <option value="42">44</option>
+                    <option value="42">45</option>
+                    <option value="42">46</option>
+                  </select>
+                </div>
+                <div class="product-char__line"></div>
+
+                <div class="product-char__add">
+                  <div class="product-char__count-block">
+                    <div class="product-char__count-block-container">
+                      <button
+                        class="product-char__remove-btn product-char__count-btn"
+                      >
+                        -
+                      </button>
+                      <div class="product-char__count">2</div>
+                      <button
+                        class="product-char__remove-btn product-char__count-btn"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <a class="product-char__add-btn">
+                    <img
+                      src="./public/assets/icons/add-cart-btn.svg"
+                      alt=""
+                      class="product-char__add-btn-img"
+                    />
+                    <span class="product-char__add-btn-text">Добавить</span>
+                  </a>
+                  <a class="product-char__add-wish">
+                    <img
+                      src="./public/assets/icons/wish-blue-btn.svg"
+                      alt="Добавить в избранное"
+                    />
+                  </a>
+                </div>
+                <div class="product-char__line"></div>
+              </div>
+            </div>
+            <div class="product__best-product best-product">
+              <h2 class="best-product__title">Лучшие товары</h2>
+
+              <div class="best-prosuct__product-card product-card">
+                <button class="product-card__wish-btn active"></button>
+                <div class="product-card__img">
+                  <img
+                    src="./public/assets/product-mages/product1.jpg"
+                    alt="Nike Blazer"
+                  />
+                </div>
+                <p class="product-card__name">
+                  Мужские Кроссовки Nike Blazer Mid Suede
+                </p>
+                <p class="product-card__price">
+                  ЦЕНА: <br />
+                  <span class="product-card__price--sum">12 999 руб.</span>
+                </p>
+                <button class="product-card__add-btn active"></button>
+              </div>
+            </div>
+            <div class="product__all-char all-char">
+              <ul class="all-char__menu">
+                <li class="all-char__item">Описание</li>
+                <li class="all-char__item">Характеристики</li>
+              </ul>
+            </div>
+            <div class="product__related-product"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
