@@ -134,6 +134,18 @@ ul {
   cursor: pointer;
 }
 
+.header__logout {
+  display: none;
+}
+
+.header__logout.active {
+  display: flex;
+  cursor: pointer;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+}
+
 /* Рекламный блок */
 
 .ad {
