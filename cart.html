@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cart.css">
+    <title>Корзина</title>
+  </head>
+  <body>
+    <div class="app">
+        <header class="header">
+          <div class="container">
+            <div class="header__body">
+              <div class="header__logo logo">
+                <a class="logo__img">
+                  <img
+                    src="./public/assets/logo.png"
+                    alt="Магазин лучших кроссовок"
+                    class="logo__img-image"
+                  />
+                </a>
+                <div class="logo__titles">
+                  <h2 class="logo__title">React Sneakers</h2>
+                  <h3 class="logo__subtitle">Магазин лучших кроссовок</h3>
+                </div>
+              </div>
+              <div class="header__actions">
+                <div class="header__shopping-cart shopping-cart">
+                  <div class="shopping-cart__icon">
+                    <img
+                      src="./public/assets/icons/shopping-cart.svg"
+                      alt="Корзина"
+                    />
+                  </div>
+                  <div class="shopping-cart__sum">0 руб.</div>
+                </div>
+                <div class="header__wishlist">
+                  <img src="./public/assets/icons/wish.svg" alt="Желаемое" />
+                </div>
+                <div class="header__profile">
+                  <img
+                    src="./public/assets/icons/header-profile.svg"
+                    alt="Профиль"
+                  />
+                </div>
+              </div>
+          </div>
+        </header>
+        <section class="cart">
+          <div class="container">
+            <div class="cart__body">
+                <div class="cart__title">
+                    <ul class='cart__title-list'>
+                        <li class="cart__title-item">
+                            Товары  
+                        </li>
+                        <li class="cart__title-item">
+                          Размер  
+                        </li>
+                        <li class="cart__title-item">
+                            Цена  
+                        </li>
+                        <li class="cart__title-item">
+                            Количество  
+                        </li>
+                        <li class="cart__title-item">
+                            Цена за один  
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart__products">
+
+                    <div class="cart__product cart-product">
+                        <a class="cart-product__delete-btn">
+                            <img src="./public/assets/icons/delete-product.png" alt="Удалить">
+                        </a>
+                        <div class="cart-product__image">
+                            <img src="./public/assets/product-mages/product1.jpg" alt="Nike Blazer">
+                        </div>
+                        <div class="cart-product__name">
+                            Nike Airmax 270 react
+                        </div>
+                        <div class="cart-product__size">
+                          <select name="" id="cart-product__size-select-id" class="cart-product__size-select disable">
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                          </select>
+                        </div>
+                        <div class="cart-product__price"><span>20000 руб.</span></div>
+                        <div class="cart-product__count-block">
+                            <div class="cart-product__count-block-container">
+                                <button class="cart-product__remove-btn cart-product__count-btn">-</button>
+                                <div class="cart-product__count">2</div>
+                                <button class="cart-product__remove-btn cart-product__count-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-product__unit-price">10000 руб.</div>
+                    </div>
+
+                    <div class="cart__product cart-product">
+                      <div class="cart-product__delete-btn">
+                          <img src="./public/assets/icons/delete-product.svg" alt="Удалить">
+                      </div>
+                      <div class="cart-product__image">
+                          <img src="./public/assets/product-mages/product1.jpg" alt="Nike Blazer">
+                      </div>
+                      <div class="cart-product__name">
+                          Nike Airmax 270 react
+                      </div>
+                      <div class="cart-product__size">
+                        <select name="" id="cart-product__size-select-id" class="cart-product__size-select">
+                          <option value="42">42</option>
+                          <option value="43">43</option>
+                          <option value="44">44</option>
+                          <option value="45">45</option>
+                        </select>
+                      </div>
+                      <div class="cart-product__price"><span>20000 руб.</span></div>
+                      <div class="cart-product__count-block">
+                          <div class="cart-product__count-block-container">
+                              <button class="cart-product__remove-btn cart-product__count-btn">-</button>
+                              <div class="cart-product__count">2</div>
+                              <button class="cart-product__remove-btn cart-product__count-btn">+</button>
+                          </div>
+                      </div>
+                      <div class="cart-product__unit-price">10000 руб.</div>
+                  </div>
+
+                  <div class="cart__product cart-product">
+                    <div class="cart-product__delete-btn">
+                        <img src="./public/assets/icons/delete-product.svg" alt="Удалить">
+                    </div>
+                    <div class="cart-product__image">
+                        <img src="./public/assets/product-mages/product1.jpg" alt="Nike Blazer">
+                    </div>
+                    <div class="cart-product__name">
+                        Nike Airmax 270 react
+                    </div>
+                    <div class="cart-product__size">
+                      <select name="" id="cart-product__size-select-id" class="cart-product__size-select">
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                      </select>
+                    </div>
+                    <div class="cart-product__price"><span>20000 руб.</span></div>
+                    <div class="cart-product__count-block">
+                        <div class="cart-product__count-block-container">
+                            <button class="cart-product__remove-btn cart-product__count-btn">-</button>
+                            <div class="cart-product__count">2</div>
+                            <button class="cart-product__remove-btn cart-product__count-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-product__unit-price">10000 руб.</div>
+                </div>
+
+                </div>
+                <div class="cart__total">
+                    <div class="cart__coupon cart-coupon">
+                        <input class="cart-coupon__input" placeholder="Купон"></input>
+                        <button class="cart-coupon__button">
+                            Применить
+                        </button>
+                    </div>
+                    <div class="cart__total-price total-price">
+                      <div class="total-price__row-container">
+                        <div class="total-price__row">
+                            <div class="total-price__row-name">Сумма заказа</div>
+                            <div class="total-price__row-value">60000 руб.</div>
+                        </div>
+                        <div class="total-price__row">
+                          <div class="total-price__row-name">Доставка</div>
+                          <div class="total-price__row-value">1000 руб.</div>
+                        </div>
+                        <div class="total-price__row">
+                          <div class="total-price__row-name">Купон</div>
+                          <div class="total-price__row-value">Нет</div>
+                        </div>
+                      </div>
+                      <div class="total-price__row total-price__result">
+                        <div class="total-price__row-name">Всего</div>
+                        <div class="total-price__row-value">61000 руб.</div>
+                      </div>
+                      <a class="total-price__send-btn">Купить</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
