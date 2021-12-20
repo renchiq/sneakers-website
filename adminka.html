@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./adminka.css" />
+    <title>Админка</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo logo">
+              <a class="logo__img">
+                <img
+                  src="./public/assets/logo.png"
+                  alt="Магазин лучших кроссовок"
+                  class="logo__img-image"
+                />
+              </a>
+              <div class="logo__titles">
+                <h2 class="logo__title">React Sneakers</h2>
+                <h3 class="logo__subtitle">Магазин лучших кроссовок</h3>
+              </div>
+            </div>
+            <div class="header__actions">
+              <div class="header__shopping-cart shopping-cart">
+                <div class="shopping-cart__icon">
+                  <img
+                    src="./public/assets/icons/shopping-cart.svg"
+                    alt="Корзина"
+                  />
+                </div>
+                <div class="shopping-cart__sum">0 руб.</div>
+              </div>
+              <div class="header__wishlist">
+                <img src="./public/assets/icons/wish.svg" alt="Желаемое" />
+              </div>
+              <div class="header__profile">
+                <img
+                  src="./public/assets/icons/header-profile.svg"
+                  alt="Профиль"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="admin">
+        <div class="container">
+          <div class="admin__body">
+            <div class="admin__side-panel side-panel">
+              <h2 class="side-panel__title">Список товаров</h2>
+
+              <div class="side-panel__body">
+                <div class="side-panel__row product-row">
+                  <div class="product-row__info">
+                    <div class="product-row__id">1</div>
+                    <div class="product-row__name">Nike Blazer</div>
+                    <div class="product-row__price">13000</div>
+                  </div>
+                  <div class="product-row__actions">
+                    <a href="#">Изменить</a>
+                    <a href="#">Удалить</a>
+                  </div>
+                </div>
+                <div class="side-panel__row product-row">
+                  <div class="product-row__info">
+                    <div class="product-row__id">2</div>
+                    <div class="product-row__name">Nike Air Force</div>
+                    <div class="product-row__price">8000</div>
+                  </div>
+                  <div class="product-row__actions">
+                    <a href="#">Изменить</a>
+                    <a href="#">Удалить</a>
+                  </div>
+                </div>
+                <div class="side-panel__row product-row">
+                  <div class="product-row__info">
+                    <div class="product-row__id">3</div>
+                    <div class="product-row__name">Cucci Tapki</div>
+                    <div class="product-row__price">69000</div>
+                  </div>
+                  <div class="product-row__actions">
+                    <a href="#">Изменить</a>
+                    <a href="#">Удалить</a>
+                  </div>
+                </div>
+
+                <div class="side-panel__row product-row">
+                  <div class="product-row__info">
+                    <div class="product-row__id">3</div>
+                    <div class="product-row__name">Cucci Tapki</div>
+                    <div class="product-row__price">69000</div>
+                  </div>
+                  <div class="product-row__actions">
+                    <a href="#">Изменить</a>
+                    <a href="#">Удалить</a>
+                  </div>
+                </div>
+
+                <div class="side-panel__row product-row">
+                  <div class="product-row__info">
+                    <div class="product-row__id">3</div>
+                    <div class="product-row__name">Cucci Tapki</div>
+                    <div class="product-row__price">69000</div>
+                  </div>
+                  <div class="product-row__actions">
+                    <a href="#">Изменить</a>
+                    <a href="#">Удалить</a>
+                  </div>
+                </div>
+
+                <div class="side-panel__row product-row">
+                  <div class="product-row__info">
+                    <div class="product-row__id">3</div>
+                    <div class="product-row__name">Cucci Tapki</div>
+                    <div class="product-row__price">69000</div>
+                  </div>
+                  <div class="product-row__actions">
+                    <a href="#">Изменить</a>
+                    <a href="#">Удалить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="admin__form">
+              <h2 class="admin__form-title">Добавить</h2>
+              <form class="admin__input-container">
+                <div class="admin__input-block">
+                  <label for="admin__input-brand" class="admin__input-label"
+                    >Бренд</label
+                  >
+                  <input
+                    type="text"
+                    class="admin__input"
+                    id="admin__input-brand"
+                  />
+                </div>
+                <div class="admin__input-block">
+                  <label for="admin__input-model" class="admin__input-label"
+                    >Модель</label
+                  >
+                  <input
+                    type="text"
+                    class="admin__input"
+                    id="admin__input-model"
+                  />
+                </div>
+                <div class="admin__input-block">
+                  <label for="admin__input-category" class="admin__input-label"
+                    >Категория</label
+                  >
+                  <input
+                    type="text"
+                    class="admin__input"
+                    id="admin__input-category"
+                  />
+                </div>
+                <div class="admin__input-block">
+                  <label for="admin__input-season" class="admin__input-label"
+                    >Сезон</label
+                  >
+                  <input
+                    type="text"
+                    class="admin__input"
+                    id="admin__input-season"
+                  />
+                </div>
+                <div class="admin__input-block">
+                  <label for="admin__input-material" class="admin__input-label"
+                    >Материал</label
+                  >
+                  <input
+                    type="tel"
+                    class="admin__input"
+                    id="admin__input-material"
+                  />
+                </div>
+                <div class="admin__input-block">
+                  <label for="admin__input-contry" class="admin__input-label"
+                    >Страна</label
+                  >
+                  <input
+                    type="tel"
+                    class="admin__input"
+                    id="admin__input-contry"
+                  />
+                </div>
+                <div class="admin__input-block">
+                  <label for="admin__input-price" class="admin__input-label"
+                    >Цена</label
+                  >
+                  <input
+                    type="tel"
+                    class="admin__input"
+                    id="admin__input-price"
+                  />
+                </div>
+                <div class="admin__input-submit">
+                  <button class="admin__input-submit-btn">Добавить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
