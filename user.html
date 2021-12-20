@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="user.css" />
+    <title>User</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo logo">
+              <a class="logo__img">
+                <img
+                  src="./public/assets/logo.png"
+                  alt="Магазин лучших кроссовок"
+                  class="logo__img-image"
+                />
+              </a>
+              <div class="logo__titles">
+                <h2 class="logo__title">React Sneakers</h2>
+                <h3 class="logo__subtitle">Магазин лучших кроссовок</h3>
+              </div>
+            </div>
+            <div class="header__actions">
+              <div class="header__catalog">
+                <img
+                  src="./public/assets/icons/sneakers-icon.png"
+                  alt="Каталог товаров"
+                />
+              </div>
+              <div class="header__shopping-cart shopping-cart">
+                <div class="shopping-cart__icon">
+                  <img
+                    src="./public/assets/icons/shopping-cart.svg"
+                    alt="Корзина"
+                  />
+                </div>
+                <div class="shopping-cart__sum">0 руб.</div>
+              </div>
+              <div class="header__wishlist">
+                <img src="./public/assets/icons/wish.svg" alt="Желаемое" />
+              </div>
+              <div class="header__profile">
+                <img
+                  src="./public/assets/icons/header-profile.svg"
+                  alt="Профиль"
+                />
+              </div>
+              <div class="header__logout active">
+                <img src="./public/assets/icons/logout.svg" alt="Выход" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="user">
+        <div class="container">
+          <div class="user__body">
+            <div class="user__info-block">
+              <div class="user__input-header">
+                <div class="user__input-avatar">
+                  <img
+                    src="./public/assets/icons/header-profile.svg"
+                    alt="Фото"
+                  />
+                </div>
+                <div class="user__input-name-container">
+                  <div class="user__input-header-name">Боевой Вертолёт</div>
+                  <div class="user__input-header-subtitle">
+                    Укажите основную информацию, чтобы пользоваться REACT
+                    SNEAKERS было удобнее
+                  </div>
+                </div>
+              </div>
+              <form class="user__input-container">
+                <div class="user__input-block">
+                  <label for="user__input-login" class="user__input-label"
+                    >Логин</label
+                  >
+                  <input
+                    type="text"
+                    class="user__input"
+                    id="user__input-login"
+                    value="Helicopter"
+                  />
+                </div>
+                <div class="user__input-block">
+                  <label for="user__input-name" class="user__input-label"
+                    >Имя</label
+                  >
+                  <input
+                    type="text"
+                    class="user__input"
+                    id="user__input-name"
+                    value="Боевой Вертолёт"
+                  />
+                </div>
+                <div class="user__input-block">
+                  <label for="user__input-password" class="user__input-label"
+                    >Пароль</label
+                  >
+                  <input
+                    type="password"
+                    class="user__input"
+                    id="user__input-password"
+                  />
+                </div>
+                <div class="user__input-block">
+                  <label for="user__input-email" class="user__input-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="user__input"
+                    id="user__input-email"
+                    value="helicopter@gmail.com"
+                  />
+                </div>
+                <div class="user__input-block">
+                  <label for="user__input-phone" class="user__input-label"
+                    >Телефон</label
+                  >
+                  <input
+                    type="tel"
+                    class="user__input"
+                    id="user__input-phone"
+                  />
+                </div>
+                <div class="user__input-submit">
+                  <button class="user__input-submit-btn">Сохранить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
