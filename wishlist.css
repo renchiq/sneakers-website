@@ -1,0 +1,13 @@
+.wishlist {
+  min-height: 70vh;
+}
+
+.wishlist__body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.wishlist__product-card {
+  margin: 15px;
+}
